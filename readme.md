@@ -7,7 +7,7 @@
 - **MVP**: Be able to view, create, and delete Songs from the library
 - **Post-MVP**: Have a front-end developed to interact with the developed API
 - **Goals**: 
-- [ ] Project Approval
+- [X] Project Approval
 - [ ] Boilerplate
 - [ ] Seeding & Testing
 - [ ] Deployment
