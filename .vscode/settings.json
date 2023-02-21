@@ -6,5 +6,8 @@
     "vercel": {
       "host": "https://songinthebook.vercel.app",
     }
-  }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 }
