@@ -3,11 +3,11 @@ import 'dotenv/config'
 import Songs from '../models/Songs.js'
 import bookData from './book.json' assert {type: 'json'}
 
-
+//@ts-ignore
 await mongoose.connect(process.env.DATABASE_URL)
 
 await Songs.deleteMany({})
-await Songs.insertMany(bookData);
+await Songs.insertMany(bookData)
 
 await mongoose.disconnect()
 

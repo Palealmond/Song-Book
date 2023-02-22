@@ -1,7 +1,6 @@
 import mongoose from 'mongoose'
 
 const SongsSchema = new mongoose.Schema({
-  _id: String,
   title: String,
   song: [{
     key: String,

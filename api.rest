@@ -7,6 +7,12 @@
 
 # You'll need to switch to either `local` or `vercel` to get started.
 
-@baseUrl = {{host}}/api/
+@baseUrl = {{host}}/api
 
 GET {{baseUrl}}
+
+###
+
+GET {{baseUrl}}/Kill Bill
+
+###

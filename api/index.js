@@ -1,6 +1,7 @@
 import express from 'express'
 import lifecycle from './middleware/lifecycle.js'
 import mongoose from 'mongoose'
+import router from '../routes/songRoute.js'
 
 const app = express()
 
@@ -19,13 +20,14 @@ app.use(lifecycle({
   }
 }))
 
+app.use('/api/', router)
 // Feel free to use a router and move this elsewhere.
-app.get('/api', async (req, res) => {
+// app.get('/api', async (req, res) => {
 
 
-  console.log(process.env.DATABASE_URL)
-  res.json({ message: 'Sup Dog' })
-})
+//   console.log(process.env.DATABASE_URL)
+//   res.json({ message: 'Sup Dog' })
+// })
 
 // Don't use app.listen. Instead export app.
 export default app

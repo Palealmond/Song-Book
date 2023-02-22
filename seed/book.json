@@ -1,12 +1,22 @@
 [
   {
-    "_id": "0000000001",
+
     "title": "Test Song",
     "song": {
       "key": "C",
       "prog": "C-Am-Em-G7",
       "author": "Timbo Slice",
       "original": true
+    }
+  },
+  {
+
+    "title": "Kill Bill",
+    "song": {
+      "key": "G#",
+      "prog": "A#m-D#-G#-F7",
+      "author": "SZA",
+      "original": false
     }
   }
 ]

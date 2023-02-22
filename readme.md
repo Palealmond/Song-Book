@@ -8,8 +8,17 @@
 - **Post-MVP**: Have a front-end developed to interact with the developed API
 - **Goals**: 
 - [X] Project Approval
-- [ ] Boilerplate
+- [X] Boilerplate
 - [ ] Seeding & Testing
 - [ ] Deployment
 - **Data Model**:
 - ![Data-Model](imgs/Screenshot%202023-02-17%20at%203.23.55%20PM.png)
+- **Routing Table**:
+- 
+              | Route          | HTTP Method | DB Action | Description           |
+              | -------------- | ----------- | --------- | --------------------- |
+              | /api/songs     | GET         | INDEX     | Indexes all the songs |
+              | /api/songs     | POST        | CREATE    | Create a song         |
+              | /api/songs/:id | GET         | SHOW      | Show a single song    |
+              | /api/songs/:id | PUT         | UPDATE    | Update a song         |
+              | /api/songs/:id | DELETE      | DELETE    | Delete a song         |
