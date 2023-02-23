@@ -5,12 +5,10 @@ import bookData from './book.json' assert {type: 'json'}
 
 
 
-
+console.log(process.env.DATABASE_URL)
 
 //@ts-ignore
 await mongoose.connect(process.env.DATABASE_URL)
-
-
 
 
 await Songs.deleteMany({})
