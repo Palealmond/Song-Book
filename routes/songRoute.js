@@ -6,7 +6,7 @@ const router = express.Router()
 router.get('/:title', controllers.getSong)
 router.get('/', controllers.getSongs)
 router.post('/', controllers.createSong)
-router.put('/:id', controllers.updateSong)
-router.delete('/:id', controllers.deleteSong)
+router.put('/:title', controllers.updateSong)
+router.delete('/:title', controllers.deleteSong)
 
 export default router

@@ -4,7 +4,9 @@ import mongoose from 'mongoose'
 import router from '../routes/songRoute.js'
 
 const app = express()
+app.use(express.json())
 
+mongoose.set('strictQuery', false)
 
 app.use(lifecycle({
   async setup() {

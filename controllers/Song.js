@@ -33,8 +33,8 @@ export const getSong = async (req, res) => {
 
 export const createSong = async (req, res) => {
   try {
-    const songs = new Song(req.body)
-    await songs.save()
+    const songs = await Song.create(req.body)
+    console.log(songs)
     res.status(201).json(songs)
   } catch (error) {
     console.error(error)
@@ -44,8 +44,9 @@ export const createSong = async (req, res) => {
 
 export const updateSong = async (req, res) => {
   try {
-    const { id } = req.params
-    const songs = await Song.findByIdAndUpdate(id, req.body)
+    const title = req.params.title
+    const songs = await Song.findOneAndUpdate({ title: title }, { $set: req.body },
+      { new: true })
     res.status(201).json(songs)
   } catch (error) {
     console.error(error)
@@ -54,9 +55,11 @@ export const updateSong = async (req, res) => {
 }
 
 export const deleteSong = async (req, res) => {
+
   try {
-    const { id } = req.params
-    const deleted = await Song.findByIdAndDelete(id)
+    const title = req.params.title
+    const deleted = await Song.findOneAndDelete({ title: title })
+
 
     if (deleted) {
       return res.status(200).send('The song has returned to the primordial ooze!')
