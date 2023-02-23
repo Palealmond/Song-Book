@@ -5,7 +5,8 @@
   "main": "api/index.js",
   "scripts": {
     "prestart": "vercel env pull .env",
-    "start": "vercel dev"
+    "start": "vercel dev",
+    "build":"node seed/seed.js"
   },
   "license": "MIT",
   "dependencies": {
