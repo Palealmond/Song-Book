@@ -24,13 +24,14 @@ POST {{baseUrl}}
 Content-Type: application/json
 
 {
-    "title": "Purple Haze",
+    "title": "Another Test",
     "song": {
-      "key": "Em",
-      "prog": "E7b5-A-G",
-      "author": "Jimi Hendrix",
-      "original": false
+      "key": "D",
+      "prog": "Dmaj7-Em-G-A",
+      "author": "Timbo Slice",
+      "original": true
     }
-}
+},
+
 
 ###

@@ -12,10 +12,7 @@ export const getSongs = async (req, res) => {
 }
 
 export const getSong = async (req, res) => {
-  // console.log('dadadad')
-  // res.json({
-  //   fuck: 'you'
-  // })
+
   try {
     const title = req.params.title
     const songs = await Song.find({ title: title })
