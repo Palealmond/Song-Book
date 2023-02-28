@@ -1,16 +1,16 @@
 > [Template Used](https://github.com/metruzanca/ga-vercel-demo)
 >
 > - **App Title**: Song Book
-- **App Description**: Allow the storage of Chord Progressions
-- **API**: I'm making it yo.
+- **App Description**: Allow full CRUD for a database of Chord Progressions
+- **API**: From Scratch
 - **API Snippet**: N/A
-- **MVP**: Be able to view, create, and delete Songs from the library
+- **MVP**: Be able to view, create, update, and delete Songs from the library
 - **Post-MVP**: Have a front-end developed to interact with the developed API
 - **Goals**: 
 - [X] Project Approval
 - [X] Boilerplate
 - [X] Seeding & Testing
-- [X] Deployment
+- [X] Deployment/ Full CRUD
 - **Data Model**:
 - ![Data-Model](imgs/Screenshot%202023-02-17%20at%203.23.55%20PM.png)
 - **Routing Table**:
